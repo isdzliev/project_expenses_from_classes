@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <form class="col s12 m8">
+      <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="Placeholder" id="name" type="text" class="validate">
+          <label for="name" id="name-label">Name of Expense</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="amount" type="number" step=0.01 class="validate">
+          <label for="amount" id="amount-label">Amount of expense</label>
+        </div>
+        <div><a id="add" type="submit" class="waves-effect waves-light btn">Add</a></div>
+        <div>
+          <div class="row">
+            <div class="section">
+              <ul id="expense" class="collection" >
+
+              </ul>
+            </div>
+
+          </div>
+          <div class="section">
+            <p class="right">Total amount: <span id="total">0</span></p>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <!--<div class="row">-->
+    <!--<div class="col s12 m6 offset-m3">-->
+      <!--<div class="card-panel">-->
+        <!--<div class="section">-->
+          <!--<h4>Expenses</h4>-->
+        <!--</div>-->
+        <!--<div class="section">-->
+          <!--<form>-->
+            <!--<div class="input-field">-->
+              <!--<input id="name" placeholder="Expense name" class="validate" type="text"/>-->
+              <!--<label id="name-label" for="name">Expense name</label>-->
+            <!--</div>-->
+            <!--<button id="add" type="submit" class="waves-effect waves-light btn">Add</button>-->
+          <!--</form>-->
+        <!--</div>-->
+        <!--<div class="section">-->
+          <!--<ul id="expenses" class="collection"></ul>-->
+        <!--</div>-->
+        <!--<div class="section">-->
+          <!--<p>Expenses count: <span id="total">0</span></p>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+</div>
+<script src="app.js"></script>
+</body>
+</html>
